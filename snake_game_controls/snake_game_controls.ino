@@ -29,25 +29,25 @@ void gameControls() {
   // if X position is -5, move left
   if (horizontal == -5) {
     Serial.write("a"); // write control 'a' to serial port
-    delay(200); // add a delay
+    delay(50); // add a delay
   }
 
   // if X position is 5, move right
   else if (horizontal == 5) {
     Serial.write("d"); // write control 'd' to serial port
-    delay(200); // add a delay
+    delay(50); // add a delay
   }
 
   // if Y position is -5, move up
   else if (vertical == -5) {
     Serial.write("s"); // write control 'w' to serial port
-    delay(200); // add a delay
+    delay(50); // add a delay
   }
 
   // if Y position is 5, move down
   else if (vertical == 5) {
     Serial.write("w"); // write control 's' to serial port
-    delay(200); // add a delay
+    delay(50); // add a delay
   }
 }
 

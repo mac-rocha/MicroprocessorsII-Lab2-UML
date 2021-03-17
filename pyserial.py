@@ -17,8 +17,8 @@ ser=serial.Serial(serialDevFile, 9600, timeout=0.1)
 
 i = 0
 while True:
-    direction = ser.readline()
-    direction = direction.decode()
+    direction = ser.readline().decode()
+    # direction = direction.decode()
     if direction != '':
         arduinoInput = direction
         print(arduinoInput)

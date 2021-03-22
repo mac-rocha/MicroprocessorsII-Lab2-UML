@@ -1,7 +1,7 @@
 const int xPin = 0; // analog pin connected to X output
 const int yPin = 1; // analog pin connected to Y output
 int buzzer = 12; // buzzer connected to pin 6
-int incomingByte = 0;
+int incomingByte = 0; // incoming bytes at serial port
 
 void setup() {
   Serial.begin(9600); // initialize serial communication at 9600 bps
@@ -40,13 +40,13 @@ void gameControls() {
 
   // if Y position is -5, move up
   else if (vertical == -5) {
-    Serial.write("s"); // write control 'w' to serial port
+    Serial.write("w"); // write control 'w' to serial port
     delay(50); // add a delay
   }
 
   // if Y position is 5, move down
   else if (vertical == 5) {
-    Serial.write("w"); // write control 's' to serial port
+    Serial.write("s"); // write control 's' to serial port
     delay(50); // add a delay
   }
 }

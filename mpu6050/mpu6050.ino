@@ -16,7 +16,7 @@ void setup() {
 }
 
 void loop() {
-    Wire.beginTransmission(MPU6050_addr);
+  Wire.beginTransmission(MPU6050_addr);
   Wire.write(0x3B);
   Wire.endTransmission(false);
   Wire.requestFrom(MPU6050_addr,14,true);

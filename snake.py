@@ -162,8 +162,8 @@ while True:
         ser.write(b'E')
 
         # Move the food to a random spot
-        x = random.randint(-290, 290)
-        y = random.randint(-290, 290)
+        x = random.randint(-250, 250)
+        y = random.randint(-250, 250)
         food.goto(x,y)
 
         # Add a segment
